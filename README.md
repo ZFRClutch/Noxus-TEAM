@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOXUS TEAM | Official</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">NOXUS <span>TEAM</span></div>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#games">Nos Jeux</a></li>
+            <li><a href="#planning">Planning</a></li>
+            <li><a href="#recrutement">Recrutement</a></li>
+            <li><a href="#socials">Réseaux</a></li>
+            <li><a href="https://discord.gg/4K8fK388N4" class="btn-discord" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content reveal">
+            <div class="badge">Saison 2026 - Recrutement STAFF et membres ON</div>
+            <h1>L'Élite du <span class="gradient-text">Gaming</span></h1>
+            
+            <div class="stats-live">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="541">0</span>
+                    <span class="stat-label">Abonnés TikTok</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-label">Staffs Actifs</span>
+                </div>
+            </div>
+
+            <p>Rejoins la Noxus Team pour une expérience de jeu optimisée et une communauté soudée.</p>
+            <div class="actions">
+                <a href="#socials" class="btn-secondary">Voir les réseaux</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="planning" class="planning-section reveal">
+        <h2 class="section-title">Planning des <span class="gradient-text">Événements</span></h2>
+        <div class="calendar-container">
+            <iframe src="https://calendar.google.com/calendar/embed?src=fe39f76d42a81cd6f2945e85ef413a7b67d707727c7d311d8e31380aed66d37c%40group.calendar.google.com&ctz=Europe%2FParis" 
+            style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </section>
+
+    <section id="games" class="games-section">
+        <h2 class="section-title reveal">Les Jeux auxquels <span class="gradient-text">on joue</span></h2>
+        <div class="games-grid">
+            <a href="https://store.steampowered.com/app/244210/Assetio_Corsa/" class="game-card reveal" target="_blank">
+                <img src="https://www.minuitdouze.com/wp-content/uploads/Logo-Assetto-Corsa-Competizione.jpg" alt="Assetto Corsa">
+                <div class="game-name">Assetto Corsa</div>
+            </a>
+            <a href="https://www.farming-simulator.com/" class="game-card reveal" target="_blank">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202406/1221/5e7b5321408d56da66ffbb45abae3d2f812b0a1dd03cee5d.png" alt="Farming Simulator 25">
+                <div class="game-name">Farming Simulator 25</div>
+            </a>
+            <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" class="game-card reveal" target="_blank">
+                <img src="https://static.wikia.nocookie.net/gta/images/a/ac/Grand_Theft_Auto_V01.jpg/revision/latest?cb=20220922180148&path-prefix=fr" alt="GTA V">
+                <div class="game-name">GTA V</div>
+            </a>
+            <a href="https://www.xbox.com/fr-fr/games/store/forza-horizon-5-standard-edition/9nkx70bb0d6x" class="game-card reveal" target="_blank">
+                <img src="https://store-images.s-microsoft.com/image/apps.49800.13718773309227929.bebdcc0e-1ed5-4778-8732-f4ef65a2f445.9ac09d39-064d-466c-81ca-2f1b6f0b95c5" alt="Forza Horizon 5">
+                <div class="game-name">Forza Horizon 5</div>
+            </a>
+            <a href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/" class="game-card reveal" target="_blank">
+                <img src="https://store-images.s-microsoft.com/image/apps.60671.13700379119021319.2ac98f5e-3a7c-44f1-a2a7-cd4bca81dd82.c8d2f9f3-fce3-46e8-bff7-0df84572cf36" alt="Euro Truck Simulator 2">
+                <div class="game-name">Euro Truck Simulator 2</div>
+            </a>
+        </div>
+    </section>
+
+    <section id="vip" class="vip-section reveal">
+        <h2 class="section-title">Membres <span class="gradient-text">V.I.P</span></h2>
+        <div class="vip-grid">
+            <div class="vip-card">
+                <div class="vip-badge">👑</div>
+                <h3>Pseudo Membre</h3>
+                <p>Meilleur Pilote du mois</p>
+            </div>
+            <div class="vip-card">
+                <div class="vip-badge">🛡️</div>
+                <h3>Pseudo Staff</h3>
+                <p>Staff de la semaine</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recrutement" class="recrutement-section">
+        <div class="recrutement-container reveal">
+            <h2 class="section-title">Rejoindre le <span class="gradient-text">Staff</span></h2>
+            <p>Tu es motivé, sérieux et tu souhaites aider la Noxus Team à grandir ? Postule dès maintenant !</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0o7h7n1nyyrvbjQkSDb2OUbRB90u-mVfScM6Vss619MoH1Q/viewform?usp=header" class="btn-staff" target="_blank">Déposer ma candidature</a>
+        </div>
+    </section>
+
+    <section id="partners" class="partners-section reveal">
+        <h2 class="section-title">Nos <span class="gradient-text">Partenaires</span></h2>
+        <div class="partners-placeholder">
+            <i class="fas fa-lock"></i>
+            <p>Bientôt disponible</p>
+        </div>
+    </section>
+
+    <section id="socials" class="social-section">
+        <h2 class="section-title reveal">Rejoignez la <span class="gradient-text">Noxus Team</span></h2>
+        <div class="social-grid">
+            <a href="https://youtube.com/@noxusbgg?si=PiG-rOzJ7zA8a0Bi" class="social-card yt reveal" target="_blank">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+            <a href="https://www.tiktok.com/@noxus_forever?is_from_webapp=1&sender_device=pc" class="social-card tt reveal" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+            <a href="https://discord.gg/4K8fK388N4" class="social-card dc reveal" target="_blank">
+                <i class="fab fa-discord"></i>
+                <span>Discord</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 NOXUS TEAM - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        // Animation des chiffres
+        const counters = document.querySelectorAll('.stat-number');
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const speed = 200;
+                const inc = target / speed;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        });
+
+        ScrollReveal().reveal('.reveal', {
+            delay: 200,
+            distance: '50px',
+            duration: 1000,
+            origin: 'bottom',
+            interval: 100
+        });
+    </script>
+</body>
+</html>
