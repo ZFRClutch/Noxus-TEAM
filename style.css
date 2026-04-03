@@ -31,7 +31,7 @@ nav ul li { margin: 0 15px; }
 nav ul li a { text-decoration: none; color: white; transition: 0.3s; }
 nav ul li a:hover { color: #4facfe; text-shadow: 0 0 10px #4facfe; }
 
-/* Header */
+/* Header & Stats */
 header {
     height: 100vh;
     display: flex;
@@ -40,8 +40,25 @@ header {
     text-align: center;
     padding: 0 20px;
 }
+.stats-live {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #4facfe;
+}
+.stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
 
-/* CORRECTION DE LA BULLE ICI */
 .badge {
     background: rgba(142, 45, 226, 0.2);
     border: 1px solid #8e2de2;
@@ -50,7 +67,6 @@ header {
     margin-bottom: 20px;
     font-size: 0.8rem;
     box-shadow: 0 0 15px rgba(142, 45, 226, 0.3);
-    /* Ces deux lignes forcent l'ajustement au texte */
     display: inline-block;
     width: fit-content; 
 }
@@ -61,31 +77,20 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 1.1; margin-bottom: 15p
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.actions { margin-top: 50px; }
 
-/* Boutons */
-.btn-secondary, .btn-discord {
-    padding: 14px 28px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.4s;
-    display: inline-block;
+/* Planning Dark Mode */
+.planning-section { padding: 80px 10%; text-align: center; }
+.calendar-container {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
 }
-.btn-secondary { 
-    background: rgba(255,255,255,0.05); 
-    color: white; 
-    border: 1px solid rgba(255,255,255,0.2); 
-    backdrop-filter: blur(5px);
+.calendar-container iframe {
+    border-radius: 15px;
+    filter: invert(90%) hue-rotate(180deg) brightness(1.1); /* Hack pour calendrier sombre */
 }
-.btn-secondary:hover { 
-    transform: translateY(-5px); 
-    background: rgba(142, 45, 226, 0.2); 
-    border-color: #8e2de2;
-    box-shadow: 0 10px 20px rgba(142, 45, 226, 0.2);
-}
-.btn-discord { background: #5865F2; color: white; box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4); }
-.btn-discord:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(88, 101, 242, 0.6); }
 
 /* JEUX */
 .games-section { padding: 100px 10%; text-align: center; }
@@ -99,22 +104,29 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 1.1; margin-bottom: 15p
     background: rgba(255, 255, 255, 0.03);
     border-radius: 15px;
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.4s;
     border: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
     display: block;
     backdrop-filter: blur(10px);
 }
-.game-card img { width: 100%; height: 280px; object-fit: cover; transition: 0.5s; }
-.game-name { padding: 18px; font-weight: 600; font-size: 1rem; color: #fff; text-align: center; }
-.game-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    border-color: #8e2de2;
-    box-shadow: 0 0 30px rgba(142, 45, 226, 0.4);
-}
-.game-card:hover img { transform: scale(1.1); }
+.game-card img { width: 100%; height: 280px; object-fit: cover; }
+.game-card:hover { transform: translateY(-10px); border-color: #8e2de2; box-shadow: 0 0 30px rgba(142, 45, 226, 0.4); }
 
-/* STYLE RECRUTEMENT AJOUTÉ */
+/* VIP SECTION */
+.vip-section { padding: 80px 10%; text-align: center; }
+.vip-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+.vip-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid gold;
+    padding: 40px;
+    border-radius: 25px;
+    min-width: 280px;
+    backdrop-filter: blur(10px);
+}
+.vip-badge { font-size: 3rem; margin-bottom: 10px; }
+
+/* RECRUTEMENT */
 .recrutement-section { padding: 80px 10%; text-align: center; }
 .recrutement-container {
     background: rgba(255, 255, 255, 0.03);
@@ -123,7 +135,6 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 1.1; margin-bottom: 15p
     border-radius: 30px;
     backdrop-filter: blur(10px);
 }
-.recrutement-container p { margin-bottom: 30px; opacity: 0.8; }
 .btn-staff {
     background: linear-gradient(90deg, #4facfe, #8e2de2);
     padding: 16px 35px;
@@ -131,13 +142,21 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 1.1; margin-bottom: 15p
     text-decoration: none;
     color: white;
     font-weight: 800;
-    transition: 0.3s;
     display: inline-block;
-    box-shadow: 0 5px 15px rgba(142, 45, 226, 0.3);
+    margin-top: 20px;
 }
-.btn-staff:hover { transform: scale(1.05); box-shadow: 0 8px 25px rgba(142, 45, 226, 0.5); }
 
-/* Socials & Features */
+/* PARTENAIRES */
+.partners-section { padding: 80px 10%; text-align: center; }
+.partners-placeholder {
+    padding: 60px;
+    border: 2px dashed rgba(255,255,255,0.1);
+    border-radius: 30px;
+    color: rgba(255,255,255,0.4);
+}
+.partners-placeholder i { font-size: 2.5rem; margin-bottom: 15px; }
+
+/* Socials */
 .social-section { padding: 80px 20px; text-align: center; }
 .section-title { margin-bottom: 60px; font-size: 2.8rem; }
 .social-grid { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
@@ -146,19 +165,6 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 1.1; margin-bottom: 15p
     background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(10px); transition: 0.4s; display: flex; flex-direction: column; align-items: center; gap: 12px; min-width: 160px;
 }
-.social-card:hover { transform: translateY(-10px); border-color: #4facfe; background: rgba(79, 172, 254, 0.1); }
-
-.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 100px 10%; }
-.card { 
-    background: rgba(255, 255, 255, 0.02); 
-    padding: 50px 30px; 
-    border-radius: 30px; 
-    border: 1px solid rgba(255, 255, 255, 0.05); 
-    text-align: center; 
-    backdrop-filter: blur(5px);
-    transition: 0.3s;
-}
-.card:hover { border-color: #8e2de2; background: rgba(142, 45, 226, 0.05); }
-.card i { font-size: 3rem; color: #4facfe; margin-bottom: 25px; text-shadow: 0 0 15px rgba(79, 172, 254, 0.5); }
+.social-card:hover { transform: translateY(-10px); border-color: #4facfe; }
 
 footer { padding: 60px; text-align: center; opacity: 0.6; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); }
